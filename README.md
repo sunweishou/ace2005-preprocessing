@@ -1,4 +1,5 @@
 # 原编码只能支持ace2005数据集的英文数据处理，此分支解决中文数据预处理问题。
+### 使用时 --data 参数只需要传入至 xxx/data/Chinese 级目录即可.
 ### 下面的原本的README内容
 
 # ACE2005 preprocessing
