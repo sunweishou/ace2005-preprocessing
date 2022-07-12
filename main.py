@@ -11,7 +11,11 @@ import traceback
 
 def get_data_paths(ace2005_path):
     test_files, dev_files, train_files = [], [], []
-    with open('./data_list.csv', mode='r') as csv_file:
+    if 'Chinese' in ace2005_path:
+        lists = './Chinese_list.csv'    # 中文文件列表
+    else:
+        lists = './data_list.csv'       # 默认文件列表
+    with open(lists, mode='r') as csv_file:
         rows = csv_file.readlines()
         for row in rows[1:]:
             items = row.replace('\n', '').split(',')
