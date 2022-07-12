@@ -215,7 +215,7 @@ def preprocessing(data_type, files):
 
     verify_result(result)
     with open('output/{}.json'.format(data_type), 'w') as f:
-        json.dump(result, f, indent=2)
+        json.dump(result, f, indent=2, ensure_ascii=False)
 
 
 if __name__ == '__main__':
